@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseCoordinationGetter", "MouseCoordinationGetter\MouseCoordinationGetter.csproj", "{14C16056-81F6-4ECF-BEED-71E8574156DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTests", "GameTests\GameTests.csproj", "{0742B180-4778-49BE-AB81-320CB451E574}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{14C16056-81F6-4ECF-BEED-71E8574156DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14C16056-81F6-4ECF-BEED-71E8574156DF}.Release|x64.ActiveCfg = Release|x64
 		{14C16056-81F6-4ECF-BEED-71E8574156DF}.Release|x64.Build.0 = Release|x64
+		{0742B180-4778-49BE-AB81-320CB451E574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Debug|x64.Build.0 = Debug|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Release|x64.ActiveCfg = Release|Any CPU
+		{0742B180-4778-49BE-AB81-320CB451E574}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,23 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkStarter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <DockPanel>
-        <Grid Height="50"  DockPanel.Dock="Bottom" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Margin="3"  Content="Stop" Name="Stop" VerticalAlignment="Center" Click="Stop_Click" />
-            <Button  Margin="3" Grid.Column="1" Content="Clear" Name="Clear" VerticalAlignment="Center" Click="Clear_Click" />
-            <Button  Margin="3" Content="Start" Grid.Column="2" Name="Start" VerticalAlignment="Center" Click="Start_Click" />
-        </Grid>
-        <WrapPanel DockPanel.Dock="Top" Height="50">
-            <TextBox LostFocus="Balance_LostFocus" FocusableChanged="Balance_FocusableChanged" VerticalAlignment="Center" Margin="5" Height="40" Width="200" Name="Balance" />
-            <TextBlock VerticalAlignment="Center" Margin="5" Height="40" Width="200" Name="Chances"/>
-        </WrapPanel>
+        Title="MainWsindow" Height="500" Width="800" >
 
-        <ListBox Name="Logger" />
-    </DockPanel>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <WrapPanel Margin="5">
+            <TextBlock Width="200" Text="Numbers of reds '1,2,3,4,5...'"  Margin="5"  FontSize="16"/>
+            <TextBox LostFocus="NumbersOfRedsTextBox_LostFocus" Name="NumbersOfRedsTextBox" Margin="5" TextAlignment="Left"  Height="40" Width="500"/>
+        </WrapPanel>
+        <WrapPanel Margin="5">
+            <TextBlock Width="200" Text="Numbers of blacks '1,2,3,4,5.'"  Margin="5"  FontSize="16"/>
+            <TextBox LostFocus="NumbersOfBlacksTextBox_LostFocus" Name="NumbersOfBlacksTextBox" Margin="5" TextAlignment="Left"  Height="40" Width="500"/>
+        </WrapPanel>
+        <WrapPanel Margin="5">
+            <TextBlock Width="200" Text="Balance"  Margin="5"  FontSize="16"/>
+            <TextBox LostFocus="BalanceTextBox_LostFocus" Name="BalanceTextBox" Margin="5" TextAlignment="Left"  Height="40" Width="500"/>
+        </WrapPanel>
+        <WrapPanel Margin="5">
+            <TextBlock Width="200" Text="X Coor Of ResultNumber"  Margin="5"  FontSize="16"/>
+            <TextBox LostFocus="XCoorOfResultNumber_LostFocus" Name="XCoorOfResultNumber" Margin="5" TextAlignment="Left"  Height="40" Width="500"/>
+        </WrapPanel>
+        <WrapPanel Margin="5">
+            <TextBlock Width="200" Text="Y Coor Of ResultNumber"  Margin="5"  FontSize="16"/>
+            <TextBox LostFocus="YCoorOfResultNumber_LostFocus" Name="YCoorOfResultNumber" Margin="5" TextAlignment="Left"  Height="40" Width="500"/>
+        </WrapPanel>
+        <WrapPanel Margin="5">
+            <TextBlock Width="200" Text="Proccess Name"  Margin="5"  FontSize="16"/>
+            <TextBox LostFocus="ActiveWindowProccessName_LostFocus" Name="ActiveWindowProccessName" Margin="5" TextAlignment="Left"  Height="40" Width="500"/>
+        </WrapPanel>
+        <WrapPanel Margin="5">
+            <Button Margin="215,5,5,5" Name="Start" Content="Start Game"  Height="40" Width="100" Click="Start_Click" />
+            <Button Name="Stop" Margin="5" Content="Stop Game"  Height="40" Width="100"/>
+        </WrapPanel>
+    </StackPanel>
 </Window>
