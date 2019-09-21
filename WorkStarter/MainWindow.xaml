@@ -1,0 +1,27 @@
+﻿<Window x:Class="WorkStarter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkStarter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Grid Height="50"  DockPanel.Dock="Bottom" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="3"  Content="Stop" Name="Stop" VerticalAlignment="Center" Click="Stop_Click" />
+            <Button  Margin="3" Grid.Column="1" Content="Clear" Name="Clear" VerticalAlignment="Center" Click="Clear_Click" />
+            <Button  Margin="3" Content="Start" Grid.Column="2" Name="Start" VerticalAlignment="Center" Click="Start_Click" />
+        </Grid>
+        <WrapPanel DockPanel.Dock="Top" Height="50">
+            <TextBox LostFocus="Balance_LostFocus" FocusableChanged="Balance_FocusableChanged" VerticalAlignment="Center" Margin="5" Height="40" Width="200" Name="Balance" />
+            <TextBlock VerticalAlignment="Center" Margin="5" Height="40" Width="200" Name="Chances"/>
+        </WrapPanel>
+
+        <ListBox Name="Logger" />
+    </DockPanel>
+</Window>
